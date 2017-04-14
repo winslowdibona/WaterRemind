@@ -1,4 +1,5 @@
 PODS:
+  - EasyPeasy (1.4.2)
   - Realm (2.5.1):
     - Realm/Headers (= 2.5.1)
   - Realm/Headers (2.5.1)
@@ -6,12 +7,14 @@ PODS:
     - Realm (= 2.5.1)
 
 DEPENDENCIES:
+  - EasyPeasy
   - RealmSwift
 
 SPEC CHECKSUMS:
+  EasyPeasy: 50e7130b61f495ce105796e438d4136e2c8d2cc0
   Realm: 32f86104d37c8521f864d4274050b38ba6190733
   RealmSwift: f719e7511c902b8908593e8f143f59e47931bdb6
 
-PODFILE CHECKSUM: 6e93c6ab7c17dfefe4f4034e064d8c3fb0b6fd89
+PODFILE CHECKSUM: 65fa162ff8ee423457f25d120ada82a3eae86dd3
 
 COCOAPODS: 1.2.1
