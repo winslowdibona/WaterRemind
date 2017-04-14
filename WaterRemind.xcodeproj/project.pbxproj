@@ -12,9 +12,13 @@
 		8DD8AF691EA1240D00B5FF20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD8AF671EA1240D00B5FF20 /* Main.storyboard */; };
 		8DD8AF6B1EA1240D00B5FF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD8AF6A1EA1240D00B5FF20 /* Assets.xcassets */; };
 		8DD8AF6E1EA1240D00B5FF20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD8AF6C1EA1240D00B5FF20 /* LaunchScreen.storyboard */; };
+		8DD8AF7C1EA128C400B5FF20 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF7B1EA128C400B5FF20 /* Notifications.swift */; };
+		F608C9B5F20633A225C49CFF /* Pods_WaterRemind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0678C8FEF8FD4C44D7C99287 /* Pods_WaterRemind.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0678C8FEF8FD4C44D7C99287 /* Pods_WaterRemind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterRemind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40534A09025C5E962ECAA845 /* Pods-WaterRemind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterRemind.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaterRemind/Pods-WaterRemind.release.xcconfig"; sourceTree = "<group>"; };
 		8DD8AF601EA1240D00B5FF20 /* WaterRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD8AF631EA1240D00B5FF20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD8AF651EA1240D00B5FF20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		8DD8AF6A1EA1240D00B5FF20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DD8AF6D1EA1240D00B5FF20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DD8AF6F1EA1240D00B5FF20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD8AF7B1EA128C400B5FF20 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		E5A64A009FE9CB8168EC5139 /* Pods-WaterRemind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterRemind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaterRemind/Pods-WaterRemind.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F608C9B5F20633A225C49CFF /* Pods_WaterRemind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3521ED0D4ECEAC39C22B1762 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5A64A009FE9CB8168EC5139 /* Pods-WaterRemind.debug.xcconfig */,
+				40534A09025C5E962ECAA845 /* Pods-WaterRemind.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7348087E151C7AB5E3463129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0678C8FEF8FD4C44D7C99287 /* Pods_WaterRemind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8DD8AF571EA1240D00B5FF20 = {
 			isa = PBXGroup;
 			children = (
 				8DD8AF621EA1240D00B5FF20 /* WaterRemind */,
 				8DD8AF611EA1240D00B5FF20 /* Products */,
+				3521ED0D4ECEAC39C22B1762 /* Pods */,
+				7348087E151C7AB5E3463129 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +81,46 @@
 			isa = PBXGroup;
 			children = (
 				8DD8AF631EA1240D00B5FF20 /* AppDelegate.swift */,
-				8DD8AF651EA1240D00B5FF20 /* ViewController.swift */,
-				8DD8AF671EA1240D00B5FF20 /* Main.storyboard */,
-				8DD8AF6A1EA1240D00B5FF20 /* Assets.xcassets */,
-				8DD8AF6C1EA1240D00B5FF20 /* LaunchScreen.storyboard */,
-				8DD8AF6F1EA1240D00B5FF20 /* Info.plist */,
+				8DD8AF771EA125EC00B5FF20 /* ViewControllers */,
+				8DD8AF761EA125E600B5FF20 /* Storyboards */,
+				8DD8AF781EA1282300B5FF20 /* Utils */,
+				8DD8AF751EA125DD00B5FF20 /* Supporting Files */,
 			);
 			path = WaterRemind;
+			sourceTree = "<group>";
+		};
+		8DD8AF751EA125DD00B5FF20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DD8AF6A1EA1240D00B5FF20 /* Assets.xcassets */,
+				8DD8AF6F1EA1240D00B5FF20 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DD8AF761EA125E600B5FF20 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8DD8AF671EA1240D00B5FF20 /* Main.storyboard */,
+				8DD8AF6C1EA1240D00B5FF20 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		8DD8AF771EA125EC00B5FF20 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DD8AF651EA1240D00B5FF20 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8DD8AF781EA1282300B5FF20 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8DD8AF7B1EA128C400B5FF20 /* Notifications.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD8AF721EA1240D00B5FF20 /* Build configuration list for PBXNativeTarget "WaterRemind" */;
 			buildPhases = (
+				38EFCAF728A00EE8E97FD405 /* [CP] Check Pods Manifest.lock */,
 				8DD8AF5C1EA1240D00B5FF20 /* Sources */,
 				8DD8AF5D1EA1240D00B5FF20 /* Frameworks */,
 				8DD8AF5E1EA1240D00B5FF20 /* Resources */,
+				D4B75CFC713D4CDAEF2D17A4 /* [CP] Embed Pods Frameworks */,
+				9BA38A2D9FCD100EC926F1D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +193,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38EFCAF728A00EE8E97FD405 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BA38A2D9FCD100EC926F1D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaterRemind/Pods-WaterRemind-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B75CFC713D4CDAEF2D17A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaterRemind/Pods-WaterRemind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DD8AF5C1EA1240D00B5FF20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD8AF7C1EA128C400B5FF20 /* Notifications.swift in Sources */,
 				8DD8AF661EA1240D00B5FF20 /* ViewController.swift in Sources */,
 				8DD8AF641EA1240D00B5FF20 /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +369,7 @@
 		};
 		8DD8AF731EA1240D00B5FF20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A64A009FE9CB8168EC5139 /* Pods-WaterRemind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaterRemind/Info.plist;
@@ -270,6 +382,7 @@
 		};
 		8DD8AF741EA1240D00B5FF20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40534A09025C5E962ECAA845 /* Pods-WaterRemind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WaterRemind/Info.plist;
