@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D19052F1EA398950050F982 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19052E1EA398950050F982 /* Record.swift */; };
+		8D1905311EA399620050F982 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1905301EA399620050F982 /* Measurement.swift */; };
+		8D1905331EA399CB0050F982 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1905321EA399CB0050F982 /* DataManager.swift */; };
 		8DD8AF641EA1240D00B5FF20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF631EA1240D00B5FF20 /* AppDelegate.swift */; };
 		8DD8AF661EA1240D00B5FF20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF651EA1240D00B5FF20 /* ViewController.swift */; };
 		8DD8AF691EA1240D00B5FF20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD8AF671EA1240D00B5FF20 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		0678C8FEF8FD4C44D7C99287 /* Pods_WaterRemind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterRemind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40534A09025C5E962ECAA845 /* Pods-WaterRemind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterRemind.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaterRemind/Pods-WaterRemind.release.xcconfig"; sourceTree = "<group>"; };
+		8D19052E1EA398950050F982 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		8D1905301EA399620050F982 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		8D1905321EA399CB0050F982 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8DD8AF601EA1240D00B5FF20 /* WaterRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD8AF631EA1240D00B5FF20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD8AF651EA1240D00B5FF20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D19052D1EA398830050F982 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D19052E1EA398950050F982 /* Record.swift */,
+				8D1905301EA399620050F982 /* Measurement.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		8DD8AF571EA1240D00B5FF20 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD8AF631EA1240D00B5FF20 /* AppDelegate.swift */,
+				8D19052D1EA398830050F982 /* Models */,
 				8DD8AF771EA125EC00B5FF20 /* ViewControllers */,
 				8DD8AF761EA125E600B5FF20 /* Storyboards */,
 				8DD8AF781EA1282300B5FF20 /* Utils */,
@@ -132,6 +148,7 @@
 			children = (
 				8DD8AF871EA2814D00B5FF20 /* Notifications */,
 				8DD8AF7F1EA1307900B5FF20 /* LocationManager.swift */,
+				8D1905321EA399CB0050F982 /* DataManager.swift */,
 				8DD8AF831EA27D9C00B5FF20 /* Extensions.swift */,
 			);
 			name = Utils;
@@ -272,10 +289,13 @@
 			files = (
 				8DD8AF661EA1240D00B5FF20 /* ViewController.swift in Sources */,
 				8DD8AF801EA1307900B5FF20 /* LocationManager.swift in Sources */,
+				8D1905311EA399620050F982 /* Measurement.swift in Sources */,
+				8D19052F1EA398950050F982 /* Record.swift in Sources */,
 				8DD8AF821EA1331A00B5FF20 /* IntroViewController.swift in Sources */,
 				8DD8AF641EA1240D00B5FF20 /* AppDelegate.swift in Sources */,
 				8DD8AF7E1EA12DC100B5FF20 /* MapViewController.swift in Sources */,
 				8DD8AF891EA2816600B5FF20 /* NotificationTriggerType.swift in Sources */,
+				8D1905331EA399CB0050F982 /* DataManager.swift in Sources */,
 				8DD8AF861EA27F0B00B5FF20 /* NotificationManager.swift in Sources */,
 				8DD8AF841EA27D9C00B5FF20 /* Extensions.swift in Sources */,
 			);

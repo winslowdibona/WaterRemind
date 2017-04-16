@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let notificationManager = NotificationManager.shared
     let locationManager = LocationManager.shared
+    let dataManager = DataManager.shared
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
