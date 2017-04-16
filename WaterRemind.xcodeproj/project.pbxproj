@@ -12,10 +12,12 @@
 		8DD8AF691EA1240D00B5FF20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD8AF671EA1240D00B5FF20 /* Main.storyboard */; };
 		8DD8AF6B1EA1240D00B5FF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD8AF6A1EA1240D00B5FF20 /* Assets.xcassets */; };
 		8DD8AF6E1EA1240D00B5FF20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD8AF6C1EA1240D00B5FF20 /* LaunchScreen.storyboard */; };
-		8DD8AF7C1EA128C400B5FF20 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF7B1EA128C400B5FF20 /* Notifications.swift */; };
 		8DD8AF7E1EA12DC100B5FF20 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF7D1EA12DC100B5FF20 /* MapViewController.swift */; };
 		8DD8AF801EA1307900B5FF20 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF7F1EA1307900B5FF20 /* LocationManager.swift */; };
 		8DD8AF821EA1331A00B5FF20 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF811EA1331A00B5FF20 /* IntroViewController.swift */; };
+		8DD8AF841EA27D9C00B5FF20 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF831EA27D9C00B5FF20 /* Extensions.swift */; };
+		8DD8AF861EA27F0B00B5FF20 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF851EA27F0B00B5FF20 /* NotificationManager.swift */; };
+		8DD8AF891EA2816600B5FF20 /* NotificationTriggerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF881EA2816600B5FF20 /* NotificationTriggerType.swift */; };
 		F608C9B5F20633A225C49CFF /* Pods_WaterRemind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0678C8FEF8FD4C44D7C99287 /* Pods_WaterRemind.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +31,12 @@
 		8DD8AF6A1EA1240D00B5FF20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DD8AF6D1EA1240D00B5FF20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DD8AF6F1EA1240D00B5FF20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DD8AF7B1EA128C400B5FF20 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		8DD8AF7D1EA12DC100B5FF20 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DD8AF7F1EA1307900B5FF20 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		8DD8AF811EA1331A00B5FF20 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		8DD8AF831EA27D9C00B5FF20 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8DD8AF851EA27F0B00B5FF20 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		8DD8AF881EA2816600B5FF20 /* NotificationTriggerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTriggerType.swift; sourceTree = "<group>"; };
 		E5A64A009FE9CB8168EC5139 /* Pods-WaterRemind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterRemind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaterRemind/Pods-WaterRemind.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,10 +130,20 @@
 		8DD8AF781EA1282300B5FF20 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				8DD8AF7B1EA128C400B5FF20 /* Notifications.swift */,
+				8DD8AF871EA2814D00B5FF20 /* Notifications */,
 				8DD8AF7F1EA1307900B5FF20 /* LocationManager.swift */,
+				8DD8AF831EA27D9C00B5FF20 /* Extensions.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		8DD8AF871EA2814D00B5FF20 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				8DD8AF851EA27F0B00B5FF20 /* NotificationManager.swift */,
+				8DD8AF881EA2816600B5FF20 /* NotificationTriggerType.swift */,
+			);
+			name = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,12 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD8AF7C1EA128C400B5FF20 /* Notifications.swift in Sources */,
 				8DD8AF661EA1240D00B5FF20 /* ViewController.swift in Sources */,
 				8DD8AF801EA1307900B5FF20 /* LocationManager.swift in Sources */,
 				8DD8AF821EA1331A00B5FF20 /* IntroViewController.swift in Sources */,
 				8DD8AF641EA1240D00B5FF20 /* AppDelegate.swift in Sources */,
 				8DD8AF7E1EA12DC100B5FF20 /* MapViewController.swift in Sources */,
+				8DD8AF891EA2816600B5FF20 /* NotificationTriggerType.swift in Sources */,
+				8DD8AF861EA27F0B00B5FF20 /* NotificationManager.swift in Sources */,
+				8DD8AF841EA27D9C00B5FF20 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

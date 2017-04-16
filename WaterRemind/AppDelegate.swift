@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import SwiftyBeaver
+
+let log = SwiftyBeaver.self
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let notificationManager = NotificationManager.shared
+    let locationManager = LocationManager.shared
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        LocationManager.shared.requestAuth { (success) in
+        locationManager.requestAuth { (success) in
             
         }
+        
+        NotificationManager.requestAuth { (success) in
+            
+        }
+        
+        
         return true
     }
 

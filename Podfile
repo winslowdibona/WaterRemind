@@ -4,6 +4,7 @@ target 'WaterRemind' do
     use_frameworks!
     pod 'RealmSwift'
     pod 'EasyPeasy'
+    pod 'SwiftyBeaver'
 end
 
 
