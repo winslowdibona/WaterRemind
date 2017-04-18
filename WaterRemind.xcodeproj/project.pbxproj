@@ -10,6 +10,9 @@
 		8D19052F1EA398950050F982 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19052E1EA398950050F982 /* Record.swift */; };
 		8D1905311EA399620050F982 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1905301EA399620050F982 /* Measurement.swift */; };
 		8D1905331EA399CB0050F982 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1905321EA399CB0050F982 /* DataManager.swift */; };
+		8D9EF4551EA63DEE0076F23D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9EF4541EA63DEE0076F23D /* Colors.swift */; };
+		8D9EF4591EA643A30076F23D /* IntroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9EF4581EA643A30076F23D /* IntroHeaderView.swift */; };
+		8D9EF45C1EA644780076F23D /* IntroContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9EF45B1EA644780076F23D /* IntroContentView.swift */; };
 		8DD8AF641EA1240D00B5FF20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF631EA1240D00B5FF20 /* AppDelegate.swift */; };
 		8DD8AF661EA1240D00B5FF20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8AF651EA1240D00B5FF20 /* ViewController.swift */; };
 		8DD8AF691EA1240D00B5FF20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD8AF671EA1240D00B5FF20 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 		8D19052E1EA398950050F982 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		8D1905301EA399620050F982 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		8D1905321EA399CB0050F982 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8D9EF4541EA63DEE0076F23D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8D9EF4581EA643A30076F23D /* IntroHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroHeaderView.swift; sourceTree = "<group>"; };
+		8D9EF45B1EA644780076F23D /* IntroContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroContentView.swift; sourceTree = "<group>"; };
 		8DD8AF601EA1240D00B5FF20 /* WaterRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD8AF631EA1240D00B5FF20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD8AF651EA1240D00B5FF20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		8D9EF45A1EA643A60076F23D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D9EF4581EA643A30076F23D /* IntroHeaderView.swift */,
+				8D9EF45B1EA644780076F23D /* IntroContentView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		8DD8AF571EA1240D00B5FF20 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD8AF631EA1240D00B5FF20 /* AppDelegate.swift */,
+				8D9EF45A1EA643A60076F23D /* Views */,
 				8D19052D1EA398830050F982 /* Models */,
 				8DD8AF771EA125EC00B5FF20 /* ViewControllers */,
 				8DD8AF761EA125E600B5FF20 /* Storyboards */,
@@ -150,6 +166,7 @@
 				8DD8AF7F1EA1307900B5FF20 /* LocationManager.swift */,
 				8D1905321EA399CB0050F982 /* DataManager.swift */,
 				8DD8AF831EA27D9C00B5FF20 /* Extensions.swift */,
+				8D9EF4541EA63DEE0076F23D /* Colors.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -288,12 +305,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD8AF661EA1240D00B5FF20 /* ViewController.swift in Sources */,
+				8D9EF45C1EA644780076F23D /* IntroContentView.swift in Sources */,
+				8D9EF4551EA63DEE0076F23D /* Colors.swift in Sources */,
 				8DD8AF801EA1307900B5FF20 /* LocationManager.swift in Sources */,
 				8D1905311EA399620050F982 /* Measurement.swift in Sources */,
 				8D19052F1EA398950050F982 /* Record.swift in Sources */,
 				8DD8AF821EA1331A00B5FF20 /* IntroViewController.swift in Sources */,
 				8DD8AF641EA1240D00B5FF20 /* AppDelegate.swift in Sources */,
 				8DD8AF7E1EA12DC100B5FF20 /* MapViewController.swift in Sources */,
+				8D9EF4591EA643A30076F23D /* IntroHeaderView.swift in Sources */,
 				8DD8AF891EA2816600B5FF20 /* NotificationTriggerType.swift in Sources */,
 				8D1905331EA399CB0050F982 /* DataManager.swift in Sources */,
 				8DD8AF861EA27F0B00B5FF20 /* NotificationManager.swift in Sources */,

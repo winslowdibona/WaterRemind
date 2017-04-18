@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import EasyPeasy
 
 class ViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.present(MapViewController(), animated: true, completion: nil)
+        self.present(IntroViewController(), animated: true, completion: nil)
     }
 }
 

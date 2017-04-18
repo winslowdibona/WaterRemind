@@ -41,6 +41,7 @@ enum QueryType {
     }
 }
 
+
 class DataManager: NSObject {
     
     static let shared = DataManager()
@@ -67,6 +68,20 @@ class DataManager: NSObject {
             }
         }
         return []
+    }
+    
+    func save(object: Object) -> Bool {
+        if let realm = mainRealm {
+            do {
+                try realm.write {
+                    realm.add(object)
+                }
+                return true
+            } catch {
+                log.error("Error creating object - \(object)")
+            }
+        }
+        return false
     }
 }
 

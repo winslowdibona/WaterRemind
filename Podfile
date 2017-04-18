@@ -5,6 +5,8 @@ target 'WaterRemind' do
     pod 'RealmSwift'
     pod 'EasyPeasy'
     pod 'SwiftyBeaver'
+    pod 'YXWaveView'
+    pod 'FontAwesome.swift'
 end
 
 

@@ -20,3 +20,18 @@ class Record: Object {
         return "id"
     }
 }
+
+extension Record {
+    class func create(date: Date?, amount: String?, measurementId: String?) -> Record? {
+        let record = Record()
+        record.id = UUID().uuidString
+        record.date = date
+        record.amount = amount
+        record.measurementId = measurementId
+        if DataManager.shared.save(object: record) {
+            return record
+        } else {
+            return nil
+        }
+    }
+}

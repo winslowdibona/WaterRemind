@@ -1,23 +1,29 @@
 PODS:
   - EasyPeasy (1.4.2)
+  - FontAwesome.swift (1.1.1)
   - Realm (2.5.1):
     - Realm/Headers (= 2.5.1)
   - Realm/Headers (2.5.1)
   - RealmSwift (2.5.1):
     - Realm (= 2.5.1)
   - SwiftyBeaver (1.2.0)
+  - YXWaveView (0.4.0)
 
 DEPENDENCIES:
   - EasyPeasy
+  - FontAwesome.swift
   - RealmSwift
   - SwiftyBeaver
+  - YXWaveView
 
 SPEC CHECKSUMS:
   EasyPeasy: 50e7130b61f495ce105796e438d4136e2c8d2cc0
+  FontAwesome.swift: f4ff5a9199dc3b510eba5bb377e834f159aef358
   Realm: 32f86104d37c8521f864d4274050b38ba6190733
   RealmSwift: f719e7511c902b8908593e8f143f59e47931bdb6
   SwiftyBeaver: ee865c50ec462ff142f232145057818491c2b344
+  YXWaveView: 57c411339d0adcd54c3443befadead8df9e12391
 
-PODFILE CHECKSUM: cd8d1dbf5b3e32f7714fb08ace0062e00f41a828
+PODFILE CHECKSUM: 50b5b0a93b53b94f3201f6a77ffbdd806354b5ca
 
 COCOAPODS: 1.2.1
