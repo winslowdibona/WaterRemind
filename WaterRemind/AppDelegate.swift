@@ -23,14 +23,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        locationManager.requestAuth { (success) in
-            
-        }
         
         NotificationManager.requestAuth { (success) in
             
         }
         
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        var vc: UIViewController?
+        
+        if UserDefaults.standard.bool(forKey: "setup") {
+            vc = ViewController()
+        } else {
+            vc = IntroViewController()
+        }
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
         
         return true
     }

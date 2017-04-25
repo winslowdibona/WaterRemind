@@ -12,7 +12,7 @@ import FontAwesome_swift
 
 protocol IntroContentViewDelegate {
     func pushedContinue()
-    func selectedReminderFrequency(minutes: Int)
+    func selectedReminderFrequency(minutes: TimeInterval)
     func selectedLocationReminder(yes: Bool)
 }
 
@@ -45,9 +45,9 @@ class IntroContentView: UIView {
         if let frequencyString = sender.titleLabel?.text {
             print("Selected - \(frequencyString)")
             switch frequencyString {
+            case "Every 3 hours": delegate?.selectedReminderFrequency(minutes: 180)
             case "Every 2 hours": delegate?.selectedReminderFrequency(minutes: 120)
             case "Hourly": delegate?.selectedReminderFrequency(minutes: 60)
-            case "Every 30 min": delegate?.selectedReminderFrequency(minutes: 30)
             default: break
             }
         }
@@ -104,19 +104,19 @@ class IntroContentView: UIView {
     func setupReminders() {
         let button1 = UIButton(type: .system)
         button1.backgroundColor = Color.grey
-        button1.setTitle("Every 2 hours", for: .normal)
+        button1.setTitle("Every 3 hours", for: .normal)
         button1.setTitleColor(Color.black, for: .normal)
         button1.addTarget(self, action: #selector(selectedReminderFrequency(sender:)), for: .touchUpInside)
         
         let button2 = UIButton(type: .system)
         button2.backgroundColor = Color.grey
-        button2.setTitle("Hourly", for: .normal)
+        button2.setTitle("Every 2 hours", for: .normal)
         button2.setTitleColor(Color.black, for: .normal)
         button2.addTarget(self, action: #selector(selectedReminderFrequency(sender:)), for: .touchUpInside)
         
         let button3 = UIButton(type: .system)
         button3.backgroundColor = Color.grey
-        button3.setTitle("Every 30 min", for: .normal)
+        button3.setTitle("Hourly", for: .normal)
         button3.setTitleColor(Color.black, for: .normal)
         button3.addTarget(self, action: #selector(selectedReminderFrequency(sender:)), for: .touchUpInside)
         

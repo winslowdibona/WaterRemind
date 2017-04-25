@@ -31,6 +31,7 @@ extension NotificationManager : UNUserNotificationCenterDelegate {
 
 
 extension NotificationManager {
+    
     class func scheduleNotification(triggerType: NotificationTriggerType, title: String, body: String) {
         let content = UNMutableNotificationContent(title: title, body: body)
         let request = UNNotificationRequest(identifier: "Identifier", content: content, trigger: triggerType.createTrigger())

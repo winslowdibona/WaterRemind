@@ -20,14 +20,14 @@ enum NotificationTriggerType {
         switch self {
         case .calendar(let hour, let min):
             let dateComponents = DateComponents(hour: hour, minute: min)
-            return UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+            return UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         case .time(let timeInterval):
-            return UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: false)
+            return UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: true)
         case .location(let coordinate, let radius):
             let region = CLCircularRegion(center: coordinate, radius: radius, identifier: "NotificationRegion")
             region.notifyOnEntry = true
             region.notifyOnExit = true
-            return UNLocationNotificationTrigger(region: region, repeats: false)
+            return UNLocationNotificationTrigger(region: region, repeats: true)
         }
     }
 }

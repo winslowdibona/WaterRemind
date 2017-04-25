@@ -10,6 +10,7 @@
 		8D19052F1EA398950050F982 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19052E1EA398950050F982 /* Record.swift */; };
 		8D1905311EA399620050F982 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1905301EA399620050F982 /* Measurement.swift */; };
 		8D1905331EA399CB0050F982 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1905321EA399CB0050F982 /* DataManager.swift */; };
+		8D9473081EAFC86500E0FE79 /* ScheduleNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9473071EAFC86500E0FE79 /* ScheduleNotificationsViewController.swift */; };
 		8D9EF4551EA63DEE0076F23D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9EF4541EA63DEE0076F23D /* Colors.swift */; };
 		8D9EF4591EA643A30076F23D /* IntroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9EF4581EA643A30076F23D /* IntroHeaderView.swift */; };
 		8D9EF45C1EA644780076F23D /* IntroContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9EF45B1EA644780076F23D /* IntroContentView.swift */; };
@@ -33,6 +34,7 @@
 		8D19052E1EA398950050F982 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		8D1905301EA399620050F982 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		8D1905321EA399CB0050F982 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8D9473071EAFC86500E0FE79 /* ScheduleNotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleNotificationsViewController.swift; sourceTree = "<group>"; };
 		8D9EF4541EA63DEE0076F23D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8D9EF4581EA643A30076F23D /* IntroHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroHeaderView.swift; sourceTree = "<group>"; };
 		8D9EF45B1EA644780076F23D /* IntroContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				8DD8AF811EA1331A00B5FF20 /* IntroViewController.swift */,
 				8DD8AF651EA1240D00B5FF20 /* ViewController.swift */,
 				8DD8AF7D1EA12DC100B5FF20 /* MapViewController.swift */,
+				8D9473071EAFC86500E0FE79 /* ScheduleNotificationsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				8D9EF45C1EA644780076F23D /* IntroContentView.swift in Sources */,
 				8D9EF4551EA63DEE0076F23D /* Colors.swift in Sources */,
 				8DD8AF801EA1307900B5FF20 /* LocationManager.swift in Sources */,
+				8D9473081EAFC86500E0FE79 /* ScheduleNotificationsViewController.swift in Sources */,
 				8D1905311EA399620050F982 /* Measurement.swift in Sources */,
 				8D19052F1EA398950050F982 /* Record.swift in Sources */,
 				8DD8AF821EA1331A00B5FF20 /* IntroViewController.swift in Sources */,

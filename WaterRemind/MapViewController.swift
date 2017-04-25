@@ -10,12 +10,18 @@ import UIKit
 import MapKit
 import EasyPeasy
 
+protocol MapViewControllerDelegate {
+    func dismiss(mapViewController: MapViewController)
+}
+
 class MapViewController: UIViewController {
     
     var mapView: MKMapView!
     var overlayRadius: CLLocationDistance = 100
     var rendered: Bool = false
     var centered: Bool = false
+    
+    var delegate: MapViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,6 +98,7 @@ extension MapViewController {
     
     func scheduleNotification() {
         let triggerType = NotificationTriggerType.location(coordinate: mapView.userLocation.coordinate, radius: overlayRadius)
-        NotificationManager.scheduleNotification(triggerType: triggerType, title: "Test", body: "Test")
+        NotificationManager.scheduleNotification(triggerType: triggerType, title: "Dont forget your water bottle!", body: "Test")
+        delegate?.dismiss(mapViewController: self)
     }
 }

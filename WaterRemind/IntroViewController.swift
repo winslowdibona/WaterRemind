@@ -30,11 +30,9 @@ class IntroViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         headerView.setup()
         headerView.setIndex(index: 0)
         contentView.setIndex(index: 0)
-        //self.present(MapViewController(), animated: true, completion: nil)
     }
 }
 
@@ -49,7 +47,9 @@ extension IntroViewController: IntroContentViewDelegate {
                     
                 }
             })
-            self.present(MapViewController(), animated: true, completion: nil)
+            let mapViewController = MapViewController()
+            mapViewController.delegate = self
+            self.present(mapViewController, animated: true, completion: nil)
         } else {
             next()
         }
@@ -59,7 +59,9 @@ extension IntroViewController: IntroContentViewDelegate {
         next()
     }
     
-    func selectedReminderFrequency(minutes: Int) {
+    func selectedReminderFrequency(minutes: TimeInterval) {
+        let trigger = NotificationTriggerType.time(timeInterval: minutes)
+        NotificationManager.scheduleNotification(triggerType: trigger, title: "Drink Water", body: "Drink Water")
         next()
     }
     
@@ -67,5 +69,17 @@ extension IntroViewController: IntroContentViewDelegate {
         index = index + 1
         headerView.setIndex(index: index)
         contentView.setIndex(index: index)
+    }
+}
+
+
+extension IntroViewController: MapViewControllerDelegate {
+    func dismiss(mapViewController: MapViewController) {
+        mapViewController.dismiss(animated: true) { 
+            UserDefaults.standard.set(true, forKey: "setup")
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.window?.rootViewController = ViewController()
+            }
+        }
     }
 }
